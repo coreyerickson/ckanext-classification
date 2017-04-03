@@ -5,7 +5,7 @@
     {{ super() }}
     {% block class_icon %}
         {% resource 'classification/css/main.css' %}
-         <div class="heading label classification_{{ res.classification }}" ><i class="label label-info" ></i>{{ _(h.classification_get_label(res.classification, pkg.type)) }}</div>
+         <br/><div class="heading label classification_{{ res.classification }}" ><i class="label label-info" ></i>{{ _(h.classification_get_label(res.classification, pkg.type)) }}</div>
     {% endblock %}
 {% endblock %}
 
